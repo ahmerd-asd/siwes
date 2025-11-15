@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vetra — Team Portfolio</title>
+  <style>
+    :root{--accent:#0ea5a4;--dark:#0f172a;--muted:#64748b}
+    body{font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,Arial;color:#0f172a;margin:0;line-height:1.5}
+    header{background:linear-gradient(90deg,#06b6d4 0%,#0ea5a4 100%);color:white;padding:2.5rem 1rem}
+    .container{max-width:1100px;margin:0 auto;padding:1rem}
+    .brand{display:flex;gap:1rem;align-items:center}
+    .logo{width:64px;height:64px;border-radius:12px;background:white;display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent)}
+    nav{margin-left:auto}
+    nav a{color:white;margin-left:1rem;text-decoration:none;font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr;gap:1rem;margin-top:1.5rem}
+    .card{background:white;border-radius:12px;padding:1rem;box-shadow:0 6px 18px rgba(2,6,23,0.08)}
+    .grid{display:grid;gap:1rem}
+    @media(min-width:800px){.hero{grid-template-columns:1fr 420px}.grid-3{grid-template-columns:repeat(3,1fr)}.grid-2{grid-template-columns:repeat(2,1fr)}}
+    h1{font-size:clamp(1.6rem,2.6vw,2.4rem);margin:0}
+    .muted{color:var(--muted)}
+    .services{display:flex;flex-wrap:wrap;gap:0.75rem}
+    .pill{background:#f1f5f9;padding:0.5rem 0.75rem;border-radius:999px;font-weight:600}
+    .team-grid{display:grid;gap:0.75rem}
+    .member{display:flex;gap:0.75rem;align-items:center}
+    .avatar{width:56px;height:56px;border-radius:8px;background:linear-gradient(135deg,#e6fffa,#cffafe);display:flex;align-items:center;justify-content:center;font-weight:700}
+    footer{background:#0b1220;color:#cbd5e1;padding:1rem;margin-top:2rem}
+    .btn{display:inline-block;padding:0.6rem 1rem;border-radius:8px;background:var(--accent);color:white;text-decoration:none;font-weight:700}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container" style="display:flex;align-items:center">
+      <div class="brand">
+        <div class="logo">VT</div>
+        <div>
+          <div style="font-weight:800">Vetra Team</div>
+          <div class="muted" style="font-size:0.85rem">Innovate — Create — Elevate</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" id="home">
+    <section class="hero">
+      <div>
+        <div class="card">
+          <h1>We are Vetra — a student tech & creative collective</h1>
+          <p class="muted">We combine web development, graphics, video, AI tooling and training to deliver professional digital services for startups and campus projects.</p>
+          <div style="margin-top:1rem" class="services">
+            <div class="pill">Web Development</div>
+            <div class="pill">Graphics & Flyers</div>
+            <div class="pill">Video Ads</div>
+            <div class="pill">AI Video</div>
+            <div class="pill">Microsoft Office Training</div>
+            <div class="pill">Project Management</div>
+          </div>
+          <div style="margin-top:1rem">
+            <a class="btn" href="#portfolio">See our work</a>
+            <a class="btn" style="background:white;color:var(--accent);margin-left:0.5rem" href="#contact">Contact</a>
+          </div>
+        </div>
+
+        <div style="margin-top:1rem" class="grid grid-2">
+          <div class="card">
+            <h3>Project Objective</h3>
+            <p class="muted">Introduce our aims and objectives and show examples of the services Vetra offers.</p>
+          </div>
+          <div class="card">
+            <h3>Delivery</h3>
+            <ul class="muted">
+              <li>Team Logos & Flyer</li>
+              <li>Team Portfolio & Website</li>
+              <li>Social Media Accounts</li>
+              <li>Video Ads & AI Video</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <aside>
+        <div class="card">
+          <h3>Quick Contact</h3>
+          <p class="muted">Lead: Muhammad Abubakar Alhassan</p>
+          <p class="muted">Email: vetra.team@example.com</p>
+          <p class="muted">Location: Kano</p>
+          <div style="margin-top:1rem">
+            <a class="btn" href="#contact">Message us</a>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="services" style="margin-top:1.5rem">
+      <h2>Services</h2>
+      <div class="grid grid-3" style="margin-top:0.75rem">
+        <div class="card">
+          <h4>Web Development</h4>
+          <p class="muted">Responsive landing pages, portfolio sites, forms, and simple CMS integration.</p>
+        </div>
+        <div class="card">
+          <h4>Graphics & Branding</h4>
+          <p class="muted">Logos, flyers, social graphics and brand kits using Adobe & Canva.</p>
+        </div>
+        <div class="card">
+          <h4>Video & AI</h4>
+          <p class="muted">Video ads, AI-based clips, captions and short-form content for socials.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" style="margin-top:1.5rem">
+      <h2>Portfolio</h2>
+      <div class="grid grid-3" style="margin-top:0.75rem">
+        <div class="card">
+          <h4>Sample: Team Flyer</h4>
+          <p class="muted">A promotional flyer showing services, contact and CTA.</p>
+        </div>
+        <div class="card">
+          <h4>Sample: Logo Concepts</h4>
+          <p class="muted">Three logo directions — modern, geometric, minimal.</p>
+        </div>
+        <div class="card">
+          <h4>Sample: Landing Page</h4>
+          <p class="muted">This website acts as the team's landing and portfolio page.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" style="margin-top:1.5rem">
+      <h2>Team Members</h2>
+      <div class="team-grid" style="margin-top:0.75rem">
+        <div class="card member"><div class="avatar">MA</div><div><strong>Muhammad Abubakar Alhassan</strong><div class="muted">Lead / Project Manager</div></div></div>
+        <div class="card member"><div class="avatar">AS</div><div><strong>Abubakar Saad Imam</strong><div class="muted">Web Developer</div></div></div>
+        <div class="card member"><div class="avatar">AJ</div><div><strong>Aminu Jafiya</strong><div class="muted">Graphics</div></div></div>
+        <div class="card member"><div class="avatar">YM</div><div><strong>Yusuf Mukhtar</strong><div class="muted">Video / Motion</div></div></div>
+        <div class="card member"><div class="avatar">SS</div><div><strong>Sulaiman Musa</strong><div class="muted">Tester / Analyst</div></div></div>
+        <div class="card member"><div class="avatar">IS</div><div><strong>Ismail Saleh</strong><div class="muted">AI Tools</div></div></div>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:1.5rem;margin-bottom:2rem">
+      <h2>Contact</h2>
+      <div class="card">
+        <form onsubmit="alert('This is a demo. Replace with your server endpoint.');return false;">
+          <div style="display:grid;gap:0.5rem">
+            <input placeholder="Your name" required style="padding:0.6rem;border-radius:8px;border:1px solid #e2e8f0" />
+            <input placeholder="Email" type="email" required style="padding:0.6rem;border-radius:8px;border:1px solid #e2e8f0" />
+            <textarea placeholder="Message" rows="4" style="padding:0.6rem;border-radius:8px;border:1px solid #e2e8f0"></textarea>
+            <button class="btn" type="submit">Send message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center">
+      <div>© Vetra Team — SIWES Project</div>
+      <div class="muted">Designed for the first project deliverable</div>
+    </div>
+  </footer>
+
+</body>
+</html>
